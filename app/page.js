@@ -1,10 +1,14 @@
 import Image from "next/image";
 import Header from "./components/header/header";
+import FeaturesSection from "./components/FeatureCard/FeatureSection";
+import Footer from "./components/footer/Footer";
+
 export default function Home() {
   return (
     <>
-      <h1>This is my first nextjs</h1>
       <Header />
+      <FeaturesSection />
+      <Footer />
     </>
   );
 }

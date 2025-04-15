@@ -1,5 +1,5 @@
-import FooterColumn from "./FooterColumn"; // Import the FooterColumn component
-import { footerData } from "./footerData"; // Import the footer data
+import FooterColumn from "./FooterColumn";
+import { footerData } from "./footerData";
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white py-12 px-6">

@@ -3,6 +3,7 @@
 
 import Image from "next/image";
 import Link from 'next/link';
+// import Prologo from '../../../public/HomePage/Header/prologo.png'; // Assuming you have a Headerlogo component
 // 1. Import the useAuth hook
 import { useAuth } from '../../context/AuthContext'; // <-- Adjust path if needed
 
@@ -22,8 +23,11 @@ export default function Header() {
       {/* Left: Logo + Company + Nav (No changes needed) */}
       <div className="flex items-center space-x-8">
         <Link href="/" className="flex items-center space-x-2">
-            <img src="/HomePage/Header/01_Logo.svg" alt="logo" className="h-8 w-8" />
-            <h1 className="text-xl font-bold text-blue-600">StockTracker Pro</h1>
+          <img src="/HomePage/Header/01_Logo.svg" alt="logo" className="h-8 w-8" />
+          <h1 className="text-xl font-bold text-blue-600 flex items-center">
+            StockTracker
+            <img src="/HomePage/Header/prologo.png" alt="Pro Logo" className="h-8 w-9" />
+          </h1>
         </Link>
         <nav className="hidden md:flex space-x-6">
           <Link href="/dashboard" className="text-gray-700 hover:text-blue-600">
@@ -39,20 +43,20 @@ export default function Header() {
       </div>
 
       {/* Center: Search (No changes needed) */}
-       <div className="flex items-center border border-gray-300 rounded-md px-3 py-1 w-64">
-         <Image
-           src="/HomePage/Header/02_Search.svg"
-           alt="Search Icon"
-           width={20}
-           height={20}
-           className="opacity-70 mr-2"
-         />
-         <input
-           type="text"
-           placeholder="Search stocks..."
-           className="w-full text-gray-800 outline-none text-sm"
-         />
-       </div>
+      <div className="flex items-center border border-gray-300 rounded-md px-3 py-1 w-64">
+        <Image
+          src="/HomePage/Header/02_Search.svg"
+          alt="Search Icon"
+          width={20}
+          height={20}
+          className="opacity-70 mr-2"
+        />
+        <input
+          type="text"
+          placeholder="Search stocks..."
+          className="w-full text-gray-800 outline-none text-sm"
+        />
+      </div>
 
       {/* Right: Auth Section - Simplified */}
       {/* 4. Conditionally render Login link OR Welcome + Logout button */}

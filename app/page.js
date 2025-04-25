@@ -1,11 +1,10 @@
-import Image from "next/image";
-import Header from "./components/header";
-import FeaturesSection from "./components/FeatureSection";
-import IntroSection from "./components/introsection";
-import ActionSection from "./components/ActionSection";
-import Footer from "./components/Footer";
+import ActionSection from "./components/homepage/ActionSection";
+import FeaturesSection from "./components/homepage/FeaturesSection";
+import Footer from "./components/homepage/Footer";
+import Header from "./components/homepage/Header";
+import IntroSection from "./components/homepage/IntroSection";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
       <Header />

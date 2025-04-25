@@ -6,15 +6,13 @@ export default function IntroSection() {
             Smarter Stock Market Analysis
           </h2>
           <p className="text-lg text-gray-600 mb-8">
-            Track,analyze, and optimise your investments with real-time data and AI powered insights.
+            Track, analyze, and optimize your investments with real-time data and AI-powered insights.
           </p>
           <div className="flex justify-center space-x-4">
             <button className="px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition">
-              {/* View Dashboard button */}
-              Dashboard
+              View Dashboard
             </button>
             <button className="px-6 py-3 border border-blue-600 text-blue-600 rounded-md hover:bg-blue-50 transition">
-              {/* Get Started */}
               Get Started
             </button>
           </div>
